@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>ZONWARE Forum :: Login</TITLE>
+<STYLE>
+BODY {
+  background-color: #000a00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: #33FF33;
+}
+A { color: #33FF33; }
+A:hover { color: #66FF66; }
+HR { color: #003300; height: 1px; border: 0; background-color: #003300; }
+INPUT[type="text"], INPUT[type="password"] {
+  background-color: #000800;
+  color: #33FF33;
+  border: 1px solid #003300;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  width: 200px;
+}
+INPUT[type="text"]:focus, INPUT[type="password"]:focus {
+  border-color: #33FF33;
+  outline: none;
+}
+INPUT[type="submit"] {
+  background-color: #001800;
+  color: #FFAA00;
+  border: 1px solid #FFAA00;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  padding: 4px 20px;
+  cursor: pointer;
+}
+INPUT[type="submit"]:hover {
+  background-color: #002800;
+}
+.google-btn {
+  background-color: #001800;
+  color: #33FF33;
+  border: 1px solid #336633;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  padding: 6px 20px;
+  cursor: pointer;
+  width: 220px;
+}
+.google-btn:hover {
+  background-color: #002200;
+  border-color: #33FF33;
+}
+</STYLE>
+</HEAD>
+<BODY>
+
+<!-- Breadcrumb -->
+<FONT SIZE="1" COLOR="#336633">
+<A HREF="main.html">Home</A> &raquo; <FONT COLOR="#FFAA00">Login</FONT>
+</FONT>
+
+<BR><BR>
+
+<CENTER>
+<TABLE WIDTH="450" BORDER="1" BORDERCOLOR="#003300" CELLPADDING="0" CELLSPACING="0">
+
+<!-- Header -->
+<TR><TD BGCOLOR="#001800" STYLE="padding: 8px 12px;">
+<FONT SIZE="2" COLOR="#FFAA00"><B>&#9656; TERMINAL AUTHENTICATION</B></FONT>
+</TD></TR>
+
+<!-- Body -->
+<TR><TD BGCOLOR="#001100" STYLE="padding: 20px;">
+
+<CENTER>
+<PRE><FONT SIZE="1" COLOR="#336633">
+ _    ___  ___ ___ _  _
+| |  / _ \/ __|_ _| \| |
+| |_| (_) \__ \| ||    |
+|____\___/|___/___|_|\_|
+</FONT></PRE>
+</CENTER>
+
+<HR>
+<BR>
+
+<!-- Google OAuth -->
+<CENTER>
+<FONT SIZE="1" COLOR="#FFAA00"><B>AUTHENTICATE VIA:</B></FONT><BR><BR>
+
+<BUTTON CLASS="google-btn" ONCLICK="alert('This would redirect to Google OAuth. In production, this connects to your Google account for authentication.')">
+&#9658; LOGIN WITH GOOGLE
+</BUTTON>
+
+<BR><BR>
+<FONT SIZE="1" COLOR="#003300">---------- OR ----------</FONT>
+<BR><BR>
+</CENTER>
+
+<!-- Traditional Login -->
+<FORM>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0" ALIGN="CENTER">
+<TR>
+<TD ALIGN="RIGHT"><FONT SIZE="1" COLOR="#336633">Username:</FONT></TD>
+<TD><INPUT TYPE="text" NAME="username" PLACEHOLDER="terminal_id"></TD>
+</TR>
+<TR>
+<TD ALIGN="RIGHT"><FONT SIZE="1" COLOR="#336633">Password:</FONT></TD>
+<TD><INPUT TYPE="password" NAME="password" PLACEHOLDER="**********"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD>
+<FONT SIZE="1">
+<INPUT TYPE="checkbox" NAME="remember"> <FONT COLOR="#336633">Remember this terminal</FONT>
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><BR><INPUT TYPE="submit" VALUE="AUTHENTICATE &gt;&gt;"></TD>
+</TR>
+</TABLE>
+</FORM>
+
+<BR>
+<HR>
+<BR>
+
+<CENTER>
+<FONT SIZE="1" COLOR="#336633">
+<A HREF="#">Forgot password?</A> &nbsp;|&nbsp; <A HREF="register.html">Register new terminal</A>
+<BR><BR>
+<FONT COLOR="#FF3333" SIZE="1">&#9888; All authentication attempts are logged by MORA.</FONT>
+</FONT>
+</CENTER>
+
+</TD></TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<CENTER>
+<FONT SIZE="1" COLOR="#003300">
+<A HREF="main.html"><FONT COLOR="#336633">Back to Forum Home</FONT></A>
+</FONT>
+</CENTER>
+<BR>
+
+</BODY>
+</HTML>
